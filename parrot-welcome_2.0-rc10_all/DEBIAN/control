@@ -1,0 +1,9 @@
+Package: parrot-welcome
+Version: 2.0-rc10
+Architecture: all
+Maintainer: Lorenzo EclipseSparl Faletra <eclipse@frozenbox.org>
+Installed-Size: 4300
+Depends: python-gtk2, python-webkit, python-gobject
+Section: info
+Priority: optional
+Description: Parrot Welcome Message
