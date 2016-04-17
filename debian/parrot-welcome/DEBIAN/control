@@ -1,8 +1,8 @@
 Package: parrot-welcome
-Version: 3.0+parrot1
+Version: 3.0+parrot2
 Architecture: all
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
-Installed-Size: 4248
+Installed-Size: 4249
 Depends: apt-parrot
 Recommends: python, python-gtk2, python-webkit, python-gobject
 Section: info
