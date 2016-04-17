@@ -16,11 +16,23 @@
   font-weight: 700;
   src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(font/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff) format('woff');
 }
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('font/comfortaa-regular-webfont.eot');
+    src: url('font/comfortaa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/comfortaa-regular-webfont.woff') format('woff'),
+         url('font/comfortaa-regular-webfont.ttf') format('truetype'),
+         url('font/comfortaa-regular-webfont.svg#comfortaaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%
+  color:#83b6cc;
 }
 
 body, button {
@@ -43,7 +55,11 @@ p.no-space {
 }
 
 .backdrop {
-  background: url("../img/background.jpg");
+  background-image: url("../img/background.jpg");
+  background-repeat: yes;
+  background-position: center center;
+  #background-size: cover;
+  background-color: #f2f2f2;
 }
 
 /*
@@ -52,7 +68,7 @@ p.no-space {
 
 #header {
   padding: 8px 0;
-  background-color: rgba(208, 208, 208, 0.25);
+  background-color: rgba(120, 180, 208, 0.50);
 }
 
 #header .logo {
@@ -78,10 +94,14 @@ p.no-space {
   text-shadow: 2px 4px 8px rgba(0,0,0,0.4),
                0px -5px 35px rgba(255,255,255,0.8);
 
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
 }
-
+#welcomeheader {
+  font-family: 'comfortaaregular', sans-serif;
+  font-size:34px;
+}
+  
 #header .system-information {
   margin: 12px 8px 8px 8px;
 }
@@ -122,10 +142,11 @@ p.no-space {
   list-style-type: none;
   padding: 8px;
   margin: 0;
+  color:#83b6cc;
 
   border: 1px solid #eee;
   border-left: 0;
-  background-color: #fff;
+  background-color: #000;
 }
 
 #navigation ul li:last-child {
@@ -139,7 +160,7 @@ p.no-space {
 }
 
 #navigation ul li a {
-  color: #333333;
+  color:#83b6cc;
 }
 
 #navigation ul li a:hover {
@@ -173,10 +194,17 @@ p.no-space {
 
 #content h2 {
   font-size: 24px;
+  color:#83b6cc;
 }
 
 #content h3 {
   font-size: 20px;
+  color:#83b6cc;
+}
+
+p, ul, li
+{
+	color:#83b6cc;
 }
 
 

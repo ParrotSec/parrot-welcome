@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /usr/share/parrot-welcome
+/usr/share/parrot-welcome/browser

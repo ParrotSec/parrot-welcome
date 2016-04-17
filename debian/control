@@ -12,5 +12,5 @@ Homepage: http://www.parrotsec.org/
 Package: parrot-welcome
 Architecture: all
 Depends: apt-parrot
-Recommends: python-gtk2, python-webkit, python-gobject
+Recommends: python, python-gtk2, python-webkit, python-gobject
 Description: Parrot Welcome Message
