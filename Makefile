@@ -1,5 +1,3 @@
-
-INSTALL=install -m 0644
 PACKAGENAME="parrot-welcome"
 
 all:
