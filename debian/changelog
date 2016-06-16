@@ -1,3 +1,9 @@
+parrot-welcome (3.0+parrot4) testing; urgency=medium
+
+  * Update for Parrot 3.0
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Thu, 16 Jun 2016 09:31:51 +0200
+
 parrot-welcome (3.0+parrot3) testing; urgency=medium
 
   * Update copyright year
