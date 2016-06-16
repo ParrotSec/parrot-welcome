@@ -1,0 +1,136 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: info: source package parrot-welcome
+dpkg-buildpackage: info: source version 3.0+parrot6
+dpkg-buildpackage: info: source distribution testing
+dpkg-buildpackage: info: source changed by Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>
+ dpkg-source --before-build parrot-welcome
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b parrot-welcome
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building parrot-welcome in parrot-welcome_3.0+parrot6.tar.xz
+dpkg-source: info: building parrot-welcome in parrot-welcome_3.0+parrot6.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+	make -j1
+make[1]: ingresso nella directory "/home/eclipse/Desktop/repo/parrot-welcome/parrot-welcome"
+make[1]: Nessuna operazione da eseguire per "all".
+make[1]: uscita dalla directory "/home/eclipse/Desktop/repo/parrot-welcome/parrot-welcome"
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/home/eclipse/Desktop/repo/parrot-welcome/parrot-welcome/debian/parrot-welcome AM_UPDATE_INFO_DIR=no
+make[1]: ingresso nella directory "/home/eclipse/Desktop/repo/parrot-welcome/parrot-welcome"
+chmod -R 0755 "parrot-welcome"/*
+chmod +x "parrot-welcome"/usr/bin/parrot-welcome
+chmod +x "parrot-welcome"/usr/share/parrot-welcome/browser
+chown root:root "parrot-welcome"/*
+cp -rf "parrot-welcome"/* /home/eclipse/Desktop/repo/parrot-welcome/parrot-welcome/debian/parrot-welcome/
+make[1]: uscita dalla directory "/home/eclipse/Desktop/repo/parrot-welcome/parrot-welcome"
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'parrot-welcome' in '../parrot-welcome_3.0+parrot6_all.deb'.
+ dpkg-genchanges  >../parrot-welcome_3.0+parrot6_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build parrot-welcome
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian...
+E: parrot-welcome source: source-is-missing parrot-welcome/usr/share/parrot-welcome/data/js/angular.min.js
+E: parrot-welcome source: source-is-missing parrot-welcome/usr/share/parrot-welcome/data/js/jquery-1.9.1.min.js
+E: parrot-welcome source: source-is-missing parrot-welcome/usr/share/parrot-welcome/data/js/jquery.easing.min.js
+E: parrot-welcome source: source-is-missing parrot-welcome/usr/share/parrot-welcome/data/js/jquery.js line length is 32086 characters (>512)
+W: parrot-welcome source: debhelper-but-no-misc-depends parrot-welcome
+W: parrot-welcome source: maintainer-also-in-uploaders
+W: parrot-welcome source: changelog-should-mention-nmu
+W: parrot-welcome source: source-nmu-has-incorrect-version-number 3.0+parrot6
+W: parrot-welcome source: out-of-date-standards-version 3.9.6 (current is 3.9.8)
+E: parrot-welcome: copyright-file-contains-full-gpl-license
+E: parrot-welcome: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-welcome: extended-description-is-empty
+W: parrot-welcome: unknown-section info
+E: parrot-welcome: dir-or-file-in-home root/Desktop/
+E: parrot-welcome: dir-or-file-in-home root/Desktop/Welcome.desktop
+W: parrot-welcome: duplicate-font-file usr/share/parrot-welcome/data/css/font/FontAwesome.otf also in fonts-font-awesome
+W: parrot-welcome: duplicate-font-file usr/share/parrot-welcome/data/css/font/fontawesome-webfont.ttf also in fonts-font-awesome
+W: parrot-welcome: duplicate-font-file usr/share/parrot-welcome/data/fonts/fonts/FontAwesome.otf also in fonts-font-awesome
+W: parrot-welcome: duplicate-font-file usr/share/parrot-welcome/data/fonts/fonts/fontawesome-webfont.ttf also in fonts-font-awesome
+W: parrot-welcome: embedded-javascript-library usr/share/parrot-welcome/data/js/jquery.easing.min.js please use libjs-jquery-easing
+W: parrot-welcome: embedded-javascript-library usr/share/parrot-welcome/data/js/jquery.js please use libjs-jquery
+W: parrot-welcome: binary-without-manpage usr/bin/parrot-welcome
+W: parrot-welcome: unusual-interpreter etc/skel/Desktop/Welcome.desktop #!xdg-open
+W: parrot-welcome: unusual-interpreter root/Desktop/Welcome.desktop #!xdg-open
+W: parrot-welcome: script-not-executable usr/share/applications/Welcome.desktop
+W: parrot-welcome: unusual-interpreter usr/share/applications/Welcome.desktop #!xdg-open
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/variables.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_bordered-pulled.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/spinning.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/glyphicons-halflings-regular.svg
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/glyphicons-halflings-regular.eot
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_icons.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_fixed-width.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/b9QBgL0iMZfDSpmcXcE8nNeiznanRB67rGZDYkMvKPc.woff
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/icons.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/stacked.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/core.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/glyphicons-halflings-regular.ttf
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/fontawesome-webfont.woff
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/fontawesome-webfont.ttf
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/comfortaa-regular-webfont.ttf
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_rotated-flipped.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/font-awesome.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_mixins.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_stacked.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/bordered-pulled.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/fonts/fontawesome-webfont.woff
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/fontawesome-webfont.eot
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/fixed-width.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/comfortaa-regular-webfont.svg
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/glyphicons-halflings-regular.woff
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/fontawesome-webfont.otf
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_path.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/comfortaa-regular-webfont.woff
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_spinning.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/FontAwesome.otf
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/less/grayscale.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_list.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/fonts/fontawesome-webfont.svg
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_larger.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/list.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/less/variables.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/index.html
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/fonts/fontawesome-webfont.eot
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/fonts/FontAwesome.otf
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/fontawesome-webfont.svg
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/rotated-flipped.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/less/mixins.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/font-awesome.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/fonts/fontawesome-webfont.ttf
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/mixins.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/path.less
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/comfortaa-regular-webfont.eot
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_core.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/css/font/b9QBgL0iMZfDSpmcXcE8nCSLrGe-fkSRw2DeVgOoWcQ.woff
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/scss/_variables.scss
+W: parrot-welcome: executable-not-elf-or-script usr/share/parrot-welcome/data/fonts/less/larger.less
+Finished running lintian.

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 16 Jun 2016 20:25:27 +0200
+Source: parrot-welcome
+Binary: parrot-welcome
+Architecture: source all
+Version: 3.0+parrot6
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Changed-By: Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>
+Description:
+ parrot-welcome - Parrot Welcome Message
+Changes:
+ parrot-welcome (3.0+parrot6) testing; urgency=medium
+ .
+   * Change Emanuel DI Vita GPG key
+Checksums-Sha1:
+ 3c817a357f9ddc706e598e014080f27a287cd471 777 parrot-welcome_3.0+parrot6.dsc
+ 5b0ec96f0d131971f4f1ccfe67729c8c5efbc820 2406136 parrot-welcome_3.0+parrot6.tar.xz
+ a7d02c72074b76daedf9be36708c9e737f77a601 2409472 parrot-welcome_3.0+parrot6_all.deb
+Checksums-Sha256:
+ 1a2cd9e6697901a407d3b1b03f258aad184d60ec844fab937f3ac9c9adde7b57 777 parrot-welcome_3.0+parrot6.dsc
+ 48b8ba73f95df9a6ec7d8c4c1503d31ca2d82f20dca7ef1befe0e4669c12b8f4 2406136 parrot-welcome_3.0+parrot6.tar.xz
+ 53c746100e5b13cbbbb22cac61ebd7d19ae1f271c7fd9b4f64a3b5534d1bf889 2409472 parrot-welcome_3.0+parrot6_all.deb
+Files:
+ 8aef0be3c2b15b92dc2e09b29d414146 777 info optional parrot-welcome_3.0+parrot6.dsc
+ 95ce6656871dad96b3f3d010472b4b60 2406136 info optional parrot-welcome_3.0+parrot6.tar.xz
+ 0c7248b6d23c06b3ba2ce5d2b28727ad 2409472 info optional parrot-welcome_3.0+parrot6_all.deb

@@ -1,3 +1,9 @@
+parrot-welcome (3.0+parrot6) testing; urgency=medium
+
+  * Change Emanuel DI Vita GPG key
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Thu, 16 Jun 2016 20:25:27 +0200
+
 parrot-welcome (3.0+parrot5) testing; urgency=medium
 
   * Add Emanuel Di Vita as one of our featured developers
