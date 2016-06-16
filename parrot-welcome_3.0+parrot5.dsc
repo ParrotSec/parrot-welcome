@@ -12,8 +12,8 @@ Build-Depends-Indep: pkg-config
 Package-List:
  parrot-welcome deb info optional arch=all
 Checksums-Sha1:
- ee12d68a07e546b54a19378bd0cd9192727935d7 2406008 parrot-welcome_3.0+parrot5.tar.xz
+ 6eb9d91b9a4b43c8ade2709598603533e6f9d1c6 2406080 parrot-welcome_3.0+parrot5.tar.xz
 Checksums-Sha256:
- 5204eeccac372735ed08e2012b3a4da3563c1d80c8a45b2d4e38946873d75cf1 2406008 parrot-welcome_3.0+parrot5.tar.xz
+ 4c4d0cc29bcdee2d4bb220443cc32f704620fc530013903b97367503240cc715 2406080 parrot-welcome_3.0+parrot5.tar.xz
 Files:
- fdbfe37a3a9edaf17839a126ba1cecb4 2406008 parrot-welcome_3.0+parrot5.tar.xz
+ ffbb399fce29544d3aeed84bb199a153 2406080 parrot-welcome_3.0+parrot5.tar.xz
