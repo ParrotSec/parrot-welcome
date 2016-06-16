@@ -1,3 +1,9 @@
+parrot-welcome (3.0+parrot5) testing; urgency=medium
+
+  * Add Emanuel Di Vita as one of our featured developers
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Thu, 16 Jun 2016 19:48:41 +0200
+
 parrot-welcome (3.0+parrot4) testing; urgency=medium
 
   * Update for Parrot 3.0
