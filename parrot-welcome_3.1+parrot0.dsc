@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: parrot-welcome
 Binary: parrot-welcome
 Architecture: all
-Version: 3.0+parrot6
+Version: 3.1+parrot0
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>, Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Homepage: http://www.parrotsec.org/
@@ -12,8 +12,8 @@ Build-Depends-Indep: pkg-config
 Package-List:
  parrot-welcome deb info optional arch=all
 Checksums-Sha1:
- 5b0ec96f0d131971f4f1ccfe67729c8c5efbc820 2406136 parrot-welcome_3.0+parrot6.tar.xz
+ 058e23054f57973adc2d3329c5cfa8f7fae83e1a 2406780 parrot-welcome_3.1+parrot0.tar.xz
 Checksums-Sha256:
- 48b8ba73f95df9a6ec7d8c4c1503d31ca2d82f20dca7ef1befe0e4669c12b8f4 2406136 parrot-welcome_3.0+parrot6.tar.xz
+ 4e8a3f1746db7c958aef83ea80535ebd9388ad662904f08e41ec1260aa89a9b7 2406780 parrot-welcome_3.1+parrot0.tar.xz
 Files:
- 95ce6656871dad96b3f3d010472b4b60 2406136 parrot-welcome_3.0+parrot6.tar.xz
+ b1fdc40cc554f15e69fdb4075f92f286 2406780 parrot-welcome_3.1+parrot0.tar.xz

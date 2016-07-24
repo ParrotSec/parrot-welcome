@@ -1,3 +1,9 @@
+parrot-welcome (3.1+parrot0) testing; urgency=medium
+
+  * Update to Parrot 3.1
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 15:41:07 +0200
+
 parrot-welcome (3.0+parrot6) testing; urgency=medium
 
   * Change Emanuel DI Vita GPG key
